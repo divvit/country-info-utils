@@ -26,8 +26,7 @@ A small library providing utility methods to get Country list, timezone for coun
 
 ## Contributing
 
-In lieu of a formal styleguide, take care to maintain the existing coding style.
-Add unit tests for any new or changed functionality. Lint and test your code.
+Nino Ulsamer, Divvit AB
 
 ## Release History
 
