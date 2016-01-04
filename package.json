@@ -1,0 +1,32 @@
+{
+  "name": "@divvit/country-info-utils",
+  "version": "0.1.0",
+  "description": "country common function like: countryList, timeZone for Country, Currency...",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/divvit/country-info-utils.git"
+  },
+  "keywords": [
+    "countryList",
+    "timeZone",
+    "CurrencyList"
+  ],
+  "author": "Anh Nguyen <anh@divvit.com> (https://wwww.divvit.com/)",
+  "license": [
+    {
+      "type": "MIT",
+      "url": ""
+    }
+  ],  
+  "bugs": {
+    "url": "https://github.com/divvit/country-info-utils/issues"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
