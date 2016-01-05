@@ -1,22 +1,21 @@
-/**
- * commons function
- * Any function Country.
- *
- */
+// We will pass these to the wrapper function at the end of the file
+(function(isNode, isAngular) {
 
-'use strict';
-module.exports = {
+// This wrapper function returns the contents of your module,
+// with dependencies
+var CountryList = function() {
+  return {
    /**
     * getCountryList function
     * Get all country with code and name.
     *
     * @return {Array} list of country
     */
-   getCountryList: function() {
+    getCountryList: function() {
       return [
             { code: "AD", name: "Andorra" },
             { code: "AE", name: "United Arab Emirates" },
-            { code: "AF", name: "Afghanistan" }, 
+            { code: "AF", name: "Afghanistan" },
             { code: "AG", name: "Antigua and Barbuda" },
             { code: "AI", name: "Anguilla" },
             { code: "AL", name: "Albania" },
@@ -875,5 +874,17 @@ module.exports = {
          { code: "ZMW", name: "Zambia Kwacha" },
          { code: "ZWD", name: "Zimbabwe Dollar" },
          ];
-   }
+      }
+   };
 };
+
+if (isAngular) {
+  // AngularJS module definition
+  angular.module('core').factory('CountryList', CountryList);
+} else if (isNode) {
+  // NodeJS module definition
+  module.exports = CountryList();
+}
+
+})(typeof module !== 'undefined' && module.exports,
+  typeof angular !== 'undefined');
