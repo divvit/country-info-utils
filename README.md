@@ -31,4 +31,5 @@ Nino Ulsamer, Divvit AB
 ## Release History
 
 * 0.1.0 Initial release
-* 1.0.0 Sharing modules between NodeJS and AngularJS release
+* 1.1.0 Sharing modules between NodeJS and AngularJS release
+* 1.1.1 Fixed AngularJS module name release

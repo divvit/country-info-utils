@@ -3,7 +3,7 @@
 
 // This wrapper function returns the contents of your module,
 // with dependencies
-var CountryList = function() {
+var CountryInfo = function() {
   return {
    /**
     * getCountryList function
@@ -880,10 +880,10 @@ var CountryList = function() {
 
 if (isAngular) {
   // AngularJS module definition
-  angular.module('core').factory('CountryList', CountryList);
+  angular.module('ngCountryInfo').factory('CountryInfo', CountryInfo);
 } else if (isNode) {
   // NodeJS module definition
-  module.exports = CountryList();
+  module.exports = CountryInfo();
 }
 
 })(typeof module !== 'undefined' && module.exports,
