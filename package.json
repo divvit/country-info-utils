@@ -1,6 +1,6 @@
 {
   "name": "@divvit/country-info-utils",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "country common function like: countryList, timeZone for Country, Currency...",
   "main": "index.js",
   "scripts": {
