@@ -880,7 +880,10 @@ var CountryInfo = function() {
 
 if (isAngular) {
   // AngularJS module definition
-  angular.module('ngCountryInfo').factory('CountryInfo', CountryInfo);
+  var ngCountryInfo = angular.module('ngCountryInfo', []);
+  ngCountryInfo.version = '1.1.1';
+
+  ngCountryInfo.factory('CountryInfo', CountryInfo);
 } else if (isNode) {
   // NodeJS module definition
   module.exports = CountryInfo();
