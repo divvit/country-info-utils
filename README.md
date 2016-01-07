@@ -1,24 +1,37 @@
 A small library providing utility methods to get Country list, timezone for country, currency of country
 
-## Installation
+## v1.2.0 Stable
 
-  npm install @divvit/country-info-utils --save
+- NPM: `npm install @divvit/country-info-utils --save`
+- Bower: `bower install divvit-country-info-utils --save --save`
+- Zip: [Download](https://github.com/divvit/country-info-utils/archive/master.zip)
 
-## Usage
+## Examples
+   - Using with Node via npmjs
+      - Installation
 
-  	var utility = require('@divvit/country-info-utils');
+        npm install @divvit/country-info-utils --save
 
-  	var countrList = utility.getCountryList();
+      - Usage
 
-  	console.log('Country list:' + countrList);
+        	var utility = require('@divvit/country-info-utils');
 
-  	var timezone = utility.getCountryForTimezone('Europe/Stockholm');
+        	var countrList = utility.getCountryList();
 
-  	console.log('Country for time zone:' + timezone);
+        	console.log('Country list:' + countrList);
 
-  	var currency = utility.getCurrencyList();
+        	var timezone = utility.getCountryForTimezone('Europe/Stockholm');
 
-  	console.log('Currency list:' + currency);
+        	console.log('Country for time zone:' + timezone);
+
+        	var currency = utility.getCurrencyList();
+
+        	console.log('Currency list:' + currency);
+
+   - Using with Angularjs via bowerjs
+
+      [Examples](https://github.com/divvit/country-info-utils/tree/master/samples)
+
 
 ## Tests
 
@@ -26,10 +39,11 @@ A small library providing utility methods to get Country list, timezone for coun
 
 ## Contributing
 
-Nino Ulsamer, Divvit AB
+Anh Nguyen, Nino Ulsamer, Divvit AB
 
 ## Release History
 
 * 0.1.0 Initial release
 * 1.1.0 Sharing modules between NodeJS and AngularJS release
 * 1.1.1 Fixed AngularJS module name release
+* 1.2.0 add AngularJS samples, make minfy js file release

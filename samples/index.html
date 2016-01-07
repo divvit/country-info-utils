@@ -1,0 +1,43 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="divvit">
+   <head>
+      <meta charset="utf-8">
+      <!-- Optimize mobile viewport -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <title>Divvit Cohort Report</title>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.18/angular.min.js"></script><!-- load angular -->
+      <!-- load up our controller -->
+      <script src="js/controllers/main.js"></script>
+      <!-- load our main application -->
+      <script src="js/core.js"></script>
+      <script src="../index.min.js"></script>
+   </head>
+   <!-- SET THE CONTROLLER -->
+   <body ng-controller="countryInfoController">
+   List of Country
+   <select ng-model='country' ng-change="changeCountry()">
+      <option ng-repeat="country in countryList" ng-value="country">
+         {{ country.code }} - {{ country.name }}
+      </option>
+   </select>
+   <p ng-hide="!country">
+   Selected Country:
+   {{ country }}
+   </p>
+   <br/>
+   Current code of country
+   <select ng-model='currency' ng-change="changeCurrency()">
+      <option ng-repeat="currency in currencyList" ng-value="currency">
+         {{ currency.code }} - {{ currency.name }}
+      </option>
+   </select>
+   <p ng-hide="!currency">
+   Selected currency:
+   {{ currency }}
+   </p>
+   </body>
+</html>
