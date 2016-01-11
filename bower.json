@@ -2,7 +2,7 @@
   "name": "@divvit/country-info-utils",
   "description": "country common function like: countryList, timeZone for Country, Currency...",
   "main": "index.min.js",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "authors": [
     "Anh Nguyen <anh@divvit.com> (https://wwww.divvit.com/)"
   ],
