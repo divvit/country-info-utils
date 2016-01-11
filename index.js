@@ -825,7 +825,7 @@
                   'VND':'₫',
                   'YER':'﷼',
                   'ZWD':'Z$' };
-            return currencySymbols[currencyCode];
+            return currencySymbols[currencyCode.toUpperCase()];
          },
 
          /**
