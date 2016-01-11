@@ -47,3 +47,4 @@ Anh Nguyen, Nino Ulsamer, Divvit AB
 * 1.1.0 Sharing modules between NodeJS and AngularJS release
 * 1.1.1 Fixed AngularJS module name release
 * 1.2.0 add AngularJS samples, make minfy js file release
+* 1.3.0 add new method get currency symbols by currency release
