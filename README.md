@@ -1,6 +1,6 @@
 A small library providing utility methods to get Country list, timezone for country, currency of country
 
-## v1.3.1 Stable
+## v1.4.0 Stable
 
 - NPM: `npm install @divvit/country-info-utils --save`
 - Bower: `bower install divvit-country-info-utils --save --save`
@@ -49,3 +49,4 @@ Anh Nguyen, Nino Ulsamer, Divvit AB
 * 1.2.0 add AngularJS samples, make minfy js file release
 * 1.3.0 add new method get currency symbols by currency release
 * 1.3.1 upcase currency code in method get currency symbols by currency release
+* 1.4.0 fix error symbols by currency release
