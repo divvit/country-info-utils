@@ -19,7 +19,7 @@
    <!-- SET THE CONTROLLER -->
    <body ng-controller="countryInfoController">
    List of Country
-   <select ng-model='country' ng-change="changeCountry()">
+   <select ng-model='country'>
       <option ng-repeat="country in countryList" ng-value="country">
          {{ country.code }} - {{ country.name }}
       </option>
@@ -30,14 +30,17 @@
    </p>
    <br/>
    Current code of country
-   <select ng-model='currency' ng-change="changeCurrency()">
-      <option ng-repeat="currency in currencyList" ng-value="currency">
+   <select  ng-model='currency' ng-change="changeCurrency(currency)">
+      <option ng-repeat="currency in currencyList" value="{{ currency.code }}">
          {{ currency.code }} - {{ currency.name }}
       </option>
    </select>
    <p ng-hide="!currency">
    Selected currency:
-   {{ currency }}
+   <br/> Name: {{ currencyName }}
+   <br/> Code: {{ currency }}
+   <br/> Symbol: {{ currencySymbol }}
+   <br/> html code: {{ currencyHtmlCode }}
    </p>
    </body>
 </html>
