@@ -1,6 +1,6 @@
 A small library providing utility methods to get Country list, timezone for country, currency of country
 
-## v1.5.0 Stable
+## v1.6.0 Stable
 
 - NPM: `npm install @divvit/country-info-utils --save`
 - Bower: `bower install divvit-country-info-utils --save --save`
@@ -19,6 +19,10 @@ A small library providing utility methods to get Country list, timezone for coun
         	var countrList = utility.getCountryList();
 
         	console.log('Country list:' + countrList);
+
+         var countryName = utility.getCountryName('vn');
+
+         console.log('Country name:' + countryName);
 
         	var timezone = utility.getCountryForTimezone('Europe/Stockholm');
 
@@ -62,4 +66,5 @@ Anh Nguyen, Nino Ulsamer, Divvit AB
 * 1.3.0 add new method get currency symbols by currency release
 * 1.3.1 upcase currency code in method get currency symbols by currency release
 * 1.4.0 fix error symbols by currency release
-* 1.5.0 add new method get currency name by, get currency symbol by html code
+* 1.5.0 add new method get currency name, get currency symbol by html code by currency code
+* 1.6.0 add new method get country name by country code

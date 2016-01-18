@@ -4,10 +4,14 @@ angular.module('divvitController',[])
       $scope.countryList = CountryInfo.getCountryList();
 
       $scope.currencyList = CountryInfo.getCurrencyList();
-      $scope.changeCurrency = function(currency){
-         $scope.currencyName = CountryInfo.getCurrencyName(currency);
-         $scope.currencySymbol = CountryInfo.getCurrencySymbols(currency);
-         $scope.currencyHtmlCode= CountryInfo.getCurrencyHtmlCode(currency);
-      }
+      $scope.changeCurrency = function(currencyCode){
+         $scope.currencyName = CountryInfo.getCurrencyName(currencyCode);
+         $scope.currencySymbol = CountryInfo.getCurrencySymbols(currencyCode);
+         $scope.currencyHtmlCode= CountryInfo.getCurrencyHtmlCode(currencyCode);
+      };
+
+      $scope.changeCountry = function(countryCode){
+         $scope.countryName = CountryInfo.getCountryName(countryCode);
+      };
    }
 ]);

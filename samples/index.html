@@ -19,14 +19,15 @@
    <!-- SET THE CONTROLLER -->
    <body ng-controller="countryInfoController">
    List of Country
-   <select ng-model='country'>
-      <option ng-repeat="country in countryList" ng-value="country">
+   <select ng-model='country' ng-change="changeCountry(country)">
+      <option ng-repeat="country in countryList" value="{{country.code}}">
          {{ country.code }} - {{ country.name }}
       </option>
    </select>
    <p ng-hide="!country">
    Selected Country:
-   {{ country }}
+   <br/> Name: {{ countryName }}
+   <br/> Code: {{ country }}
    </p>
    <br/>
    Current code of country
