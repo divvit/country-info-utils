@@ -1,10 +1,12 @@
 {
   "name": "@divvit/country-info-utils",
-  "version": "1.6.0",
+  "version": "2.0.0",
   "description": "country common function like: countryList, timeZone for Country, Currency...",
-  "main": "index.min.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "make test"
+    "build": "rimraf build && webpack",
+    "test": "npm run build && mocha build/test.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -21,14 +23,17 @@
     "url": "https://github.com/divvit/country-info-utils/issues"
   },
   "devDependencies": {
-    "chai": "^3.4.1",
-    "mocha": "^2.3.4"
+    "chai": "3.4.1",
+    "babel-core": "6.4.5",
+    "babel-loader": "6.2.1",
+    "babel-preset-es2015": "6.3.13",
+    "babel-preset-stage-0": "6.3.13",
+    "mocha": "2.4.5",
+    "rimraf": "2.5.1",
+    "webpack": "1.12.12"
   },
   "homepage": "https://github.com/divvit/country-info-utils#readme",
   "directories": {
     "test": "test"
-  },
-  "dependencies": {
-    "chai": "^3.4.1"
   }
 }
