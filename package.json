@@ -1,6 +1,6 @@
 {
   "name": "@divvit/country-info-utils",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "country common function like: countryList, timeZone for Country, Currency...",
   "main": "build/index.js",
   "scripts": {
@@ -32,8 +32,5 @@
     "rimraf": "2.5.1",
     "webpack": "1.12.12"
   },
-  "homepage": "https://github.com/divvit/country-info-utils#readme",
-  "directories": {
-    "test": "test"
-  }
+  "homepage": "https://github.com/divvit/country-info-utils#readme"
 }
